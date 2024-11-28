@@ -120,4 +120,12 @@ public class StringTest {
         System.out.println(str1.equals(str2)); // true (比较内容，相同)
     }
 
+    @Test
+    public void testFormat() {
+        System.out.println("String.format(\"%s (%s)\", \"youliang\", \"feng\") = " + String.format("%s (%s)", "youliang", "feng"));
+        System.out.println("String.format(\"%s (%s)\", null, \"feng\") = " + String.format("%s (%s)", null, "feng"));
+        System.out.println("String.format(\"%s (%s)\", \"youliang\", null) = " + String.format("%s (%s)", "youliang", null));
+        System.out.println("String.format(\"%s (%s)\", null, null) = " + String.format("%s (%s)", null, null));
+    }
+
 }
